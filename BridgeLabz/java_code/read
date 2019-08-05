@@ -1,0 +1,5 @@
+  git init
+  git add BridgeLabz
+  git commit -m "first day"
+  git remote add origin https://github.com/24vishnu/BridgeLabz_Assignment.git/
+  git push -u origin master
