@@ -18,7 +18,9 @@ class MergeSorting
 	{
 		if(start <= end && (end-start) > 0)
 		{
+
 			int mid = start + (end - start)/2;
+			// System.out.println(start+" "+mid+" "+end);
 			divideList(start, mid);
 			divideList(mid+1, end);
 
@@ -30,6 +32,7 @@ class MergeSorting
 		ArrayList<String> result = new ArrayList<String>();
 		int begin = start;
 		int last = mid+1;
+		// System.out.println("in add "+begin+" "+mid+" "+last+" "+end);
 		while(begin <= mid && last <= end)
 		{
 			if(list.get(begin).compareTo(list.get(last)) <= 0)
@@ -70,7 +73,7 @@ class MergeSorting
 	public static void main(String[] args) 
 	{
 		// Scanner scan = new Scanner(System.in);
-		String []ar = {"vishnu","akhilesh","chandan","bhanu","rajesh","souman","pankaj","deepak","shudeer","manish","shubhasis"};
+		String []ar = {"5","2","9","8","0","7","3"};//{"vishnu","akhilesh","chandan","bhanu","rajesh","souman","pankaj","deepak","shudeer","manish","shubhasis"};
 		ArrayList<String> list = new ArrayList<String>();
 		for(int i = 0; i < ar.length; i++)
 			list.add(ar[i]);
