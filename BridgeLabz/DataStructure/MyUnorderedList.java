@@ -152,7 +152,7 @@ class MyUnorderedList <T /*extends Object*/>
 	{
 		T item =(T)"null";
 		// /*int*/Integer index = (Integer)pos;
-		if(size()-1 < pos)
+		if(size() <= pos)
 		{
 			System.out.println("postion not present in list (list size is less than given postion)");
 			return item;
@@ -161,7 +161,7 @@ class MyUnorderedList <T /*extends Object*/>
 
 			/*String*/
 			Node temp = head;
-			Node temp1 = head;
+			Node temp1 = null;
 			if(pos == 0)
 			{
 				item = head.word;
@@ -175,12 +175,9 @@ class MyUnorderedList <T /*extends Object*/>
 			}
 			item = temp.word;
 			// if(temp.next != null)
-			if(temp.next != null)
-			{
+			
 				temp1.next = temp.next;
-			}else{
-				temp = null;
-			}
+			
 
 
 			// removePos(index, item);
