@@ -12,7 +12,6 @@ public class AnagramClass{
 	public static void main(String[] args) {
 		MyUtil obj = new MyUtil();
 		Scanner scan = new Scanner(System.in);
-
 //check two strings are anagram or not
 		System.out.println("Enter first String");
 		String str1 = scan.nextLine();

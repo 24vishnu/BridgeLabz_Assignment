@@ -77,8 +77,8 @@ class MyUtil
 	}
 
 //This is only for integer values ans ensure list of elements should be sorted.
-	// public static < E > void b_Search( E[] ar, E num)
-	public static boolean b_Search(int ar[], int num)
+	public static < E > void b_Search( E[] ar, E num)
+	// public static boolean b_Search(int ar[], int num)
 	{
 		int i = 0, j = ar.length-1;
 		while(i <= j)
@@ -90,8 +90,8 @@ class MyUtil
 				// System.out.printf("find element %s ", num);
 				return true;
 			}
-			// else if(ar[mid].compareTo(num) > 0)
-			else if(ar[mid] < num)
+			else if(ar[mid].compareTo(num) > 0)
+			// else if(ar[mid] < num)
 			{
 				i = mid + 1;
 			}else
